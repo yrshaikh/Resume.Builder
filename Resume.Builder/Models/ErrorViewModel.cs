@@ -1,5 +1,3 @@
-using System;
-
 namespace Resume.Builder.Web.Models
 {
     public class ErrorViewModel
