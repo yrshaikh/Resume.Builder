@@ -33,6 +33,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/Docker/docker-compose.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/Models/ErrorViewModel.cs">
           <value>
             <set />
@@ -49,6 +54,21 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/Views/Shared/_LoginPartial.cshtml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app.config">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/appsettings.Development.json">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/appsettings.json">
           <value>
             <set />
           </value>
