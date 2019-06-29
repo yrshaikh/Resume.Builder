@@ -9,6 +9,7 @@ using Resume.Builder.Web.Data;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
+
 namespace Resume.Builder.Web
 {
     public class Startup
@@ -31,8 +32,7 @@ namespace Resume.Builder.Web
             });
 
             services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseSqlite(
-                    Configuration.GetConnectionString("DefaultConnection")));
+                options.UseMySql(Configuration.GetConnectionString("DefaultConnection")));
             services.AddDefaultIdentity<IdentityUser>(
                     config =>
                     {

@@ -1,2 +1,5 @@
-Resume.Builder/obj*
-Resume.Builder/bin/*
+Resume.Builder/Resume.Builder.Web/obj*
+Resume.Builder/Resume.Builder.Web/bin/*
+Resume.Builder.Web/bin/*
+.vs/*
+Resume.Builder.Web/obj/*

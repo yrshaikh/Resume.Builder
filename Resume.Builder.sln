@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Resume.Builder.Web", "Resume.Builder.Web.csproj", "{110079EE-7076-4969-B36C-260D26111DE8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Resume.Builder.Web", "Resume.Builder.Web/Resume.Builder.Web.csproj", "{110079EE-7076-4969-B36C-260D26111DE8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
