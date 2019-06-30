@@ -15,3 +15,10 @@
 ## Swagger
 
 - Swagger URL - http://localhost:5000/swagger/index.html
+
+## Docker
+
+Using mysql as our database.
+
+1. run `dotnet ef migrations add InitialCreate`.
+2. Run `Update-Database` from the package manager console after selecting Database.EntityFramework project.

@@ -8,7 +8,6 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
 using WebApi.Dtos;
-using WebApi.Entities;
 using WebApi.Helpers;
 using WebApi.Services;
 
@@ -56,7 +55,6 @@ namespace WebApi.Controllers
                 user.Id,
                 user.Username,
                 user.FirstName,
-                user.LastName,
                 Token = tokenString
             });
         }
@@ -65,13 +63,10 @@ namespace WebApi.Controllers
         [HttpPost("register")]
         public IActionResult Register([FromBody] UserDto userDto)
         {
-            // map dto to entity
-            var user = _mapper.Map<User>(userDto);
-
             try 
             {
                 // save 
-                _userService.Create(user, userDto.Password);
+                _userService.Create(userDto);
                 return Ok();
             } 
             catch(AppException ex)
@@ -97,25 +92,25 @@ namespace WebApi.Controllers
             return Ok(userDto);
         }
 
-        [HttpPut("{id}")]
-        public IActionResult Update(int id, [FromBody]UserDto userDto)
-        {
-            // map dto to entity and set id
-            var user = _mapper.Map<User>(userDto);
-            user.Id = id;
-
-            try 
-            {
-                // save 
-                _userService.Update(user, userDto.Password);
-                return Ok();
-            } 
-            catch(AppException ex)
-            {
-                // return error message if there was an exception
-                return BadRequest(ex.Message);
-            }
-        }
+//        [HttpPut("{id}")]
+//        public IActionResult Update(int id, [FromBody]UserDto userDto)
+//        {
+//            // map dto to entity and set id
+//            var user = _mapper.Map<User>(userDto);
+//            user.Id = id;
+//
+//            try 
+//            {
+//                // save 
+//                _userService.Update(user, userDto.Password);
+//                return Ok();
+//            } 
+//            catch(AppException ex)
+//            {
+//                // return error message if there was an exception
+//                return BadRequest(ex.Message);
+//            }
+//        }
 
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)
