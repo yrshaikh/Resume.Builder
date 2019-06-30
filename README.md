@@ -11,3 +11,7 @@
 2. Run npm install
 3. Run npm start
 4. Should be hosted on http://localhost:8080/
+
+## Swagger
+
+- Swagger URL - http://localhost:5000/swagger/index.html

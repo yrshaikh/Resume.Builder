@@ -6,3 +6,4 @@ Resume.Builder.Web/obj/*
 client/node_modules/*
 server/obj/*
 server/bin/*
+server/.idea/*
