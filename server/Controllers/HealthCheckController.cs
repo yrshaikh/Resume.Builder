@@ -1,15 +1,17 @@
-using Microsoft.AspNetCore.Authorization;
+
+
 using Microsoft.AspNetCore.Mvc;
 
 namespace WebApi.Controllers
 {
-    [AllowAnonymous]
-    [Route("HealthCheck")]
+    [Route("healthcheck")]
     public class HealthCheckController : Controller
     {
-        public string Index()
+        [HttpGet]
+        [Route("test")]
+        public IActionResult Index()
         {
-            return "ok";
+            return Ok("All is well");
         }
     }
 }
