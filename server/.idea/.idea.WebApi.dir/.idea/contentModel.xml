@@ -1,6 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
+    <e p="C:\AgodaGit\Resume.Builder\client" t="Include">
+      <e p="node_modules\babel-core" t="IncludeRecursive" />
+      <e p="node_modules\babel-loader" t="IncludeRecursive" />
+      <e p="node_modules\babel-preset-es2015" t="IncludeRecursive" />
+      <e p="node_modules\babel-preset-react" t="IncludeRecursive" />
+      <e p="node_modules\babel-preset-stage-3" t="IncludeRecursive" />
+      <e p="node_modules\history" t="IncludeRecursive" />
+      <e p="node_modules\html-webpack-plugin" t="IncludeRecursive" />
+      <e p="node_modules\path" t="IncludeRecursive" />
+      <e p="node_modules\react" t="IncludeRecursive" />
+      <e p="node_modules\react-dom" t="IncludeRecursive" />
+      <e p="node_modules\react-redux" t="IncludeRecursive" />
+      <e p="node_modules\react-router-dom" t="IncludeRecursive" />
+      <e p="node_modules\redux" t="IncludeRecursive" />
+      <e p="node_modules\redux-logger" t="IncludeRecursive" />
+      <e p="node_modules\redux-thunk" t="IncludeRecursive" />
+      <e p="node_modules\webpack" t="IncludeRecursive" />
+      <e p="node_modules\webpack-dev-server" t="IncludeRecursive" />
+      <e p="package-lock.json" t="Include" />
+      <e p="package.json" t="Include" />
+      <e p="src" t="Include">
+        <e p="_actions" t="Include">
+          <e p="alert.actions.js" t="Include" />
+          <e p="index.js" t="Include" />
+          <e p="user.actions.js" t="Include" />
+        </e>
+        <e p="_components" t="Include">
+          <e p="index.js" t="Include" />
+          <e p="PrivateRoute.jsx" t="Include" />
+        </e>
+        <e p="_constants" t="Include">
+          <e p="alert.constants.js" t="Include" />
+          <e p="index.js" t="Include" />
+          <e p="user.constants.js" t="Include" />
+        </e>
+        <e p="_helpers" t="Include">
+          <e p="auth-header.js" t="Include" />
+          <e p="config.js" t="Include" />
+          <e p="history.js" t="Include" />
+          <e p="index.js" t="Include" />
+          <e p="store.js" t="Include" />
+        </e>
+        <e p="_reducers" t="Include">
+          <e p="alert.reducer.js" t="Include" />
+          <e p="authentication.reducer.js" t="Include" />
+          <e p="index.js" t="Include" />
+          <e p="registration.reducer.js" t="Include" />
+          <e p="users.reducer.js" t="Include" />
+        </e>
+        <e p="_services" t="Include">
+          <e p="index.js" t="Include" />
+          <e p="user.service.js" t="Include" />
+        </e>
+        <e p="App" t="Include">
+          <e p="App.jsx" t="Include" />
+          <e p="index.js" t="Include" />
+        </e>
+        <e p="HomePage" t="Include">
+          <e p="HomePage.jsx" t="Include" />
+          <e p="index.js" t="Include" />
+        </e>
+        <e p="index.html" t="Include" />
+        <e p="index.jsx" t="Include" />
+        <e p="LoginPage" t="Include">
+          <e p="index.js" t="Include" />
+          <e p="LoginPage.jsx" t="Include" />
+        </e>
+        <e p="RegisterPage" t="Include">
+          <e p="index.js" t="Include" />
+          <e p="RegisterPage.jsx" t="Include" />
+        </e>
+      </e>
+      <e p="webpack.config.js" t="Include" />
+    </e>
     <e p="C:\AgodaGit\Resume.Builder\README.md" t="Include" />
     <e p="C:\AgodaGit\Resume.Builder\server" t="IncludeRecursive">
       <e p="appsettings.Development.json" t="Include" />
@@ -9,7 +83,6 @@
       <e p="Controllers" t="Include">
         <e p="AccountController.cs" t="Include" />
         <e p="HealthCheckController.cs" t="Include" />
-        <e p="UsersController.cs" t="Include" />
       </e>
       <e p="Dtos" t="Include">
         <e p="UserDto.cs" t="Include" />
@@ -17,6 +90,7 @@
       <e p="Entities" t="Include">
         <e p="User.cs" t="Include" />
       </e>
+      <e p="Folder.DotSettings" t="Include" />
       <e p="Helpers" t="Include">
         <e p="AppException.cs" t="Include" />
         <e p="AppSettings.cs" t="Include" />
