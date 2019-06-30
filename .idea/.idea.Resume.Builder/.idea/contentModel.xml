@@ -5,6 +5,19 @@
       <e p="packages" t="ExcludeRecursive" />
       <e p="Resume.Builder.sln" t="IncludeFlat" />
       <e p="Resume.Builder.Web" t="IncludeRecursive">
+        <e p=".idea" t="Include">
+          <e p=".idea.Resume.Builder" t="Include">
+            <e p=".idea" t="Include">
+              <e p="contentModel.xml" t="Include" />
+              <e p="indexLayout.xml" t="Include" />
+              <e p="modules.xml" t="Include" />
+              <e p="sonarIssues.xml" t="Include" />
+              <e p="vcs.xml" t="Include" />
+              <e p="workspace.xml" t="Include" />
+            </e>
+            <e p="riderModule.iml" t="Include" />
+          </e>
+        </e>
         <e p="app.config" t="Include" />
         <e p="app.db" t="Include" />
         <e p="appsettings.Development.json" t="Include" />
@@ -16,7 +29,31 @@
             </e>
           </e>
         </e>
-        <e p="bin" t="ExcludeRecursive" />
+        <e p="bin" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp2.2" t="Include">
+              <e p="app.db" t="Include" />
+              <e p="Resume.Builder.Web.deps.json" t="Include" />
+              <e p="Resume.Builder.Web.dll" t="Include" />
+              <e p="Resume.Builder.Web.dll.config" t="Include" />
+              <e p="Resume.Builder.Web.pdb" t="Include" />
+              <e p="Resume.Builder.Web.runtimeconfig.dev.json" t="Include" />
+              <e p="Resume.Builder.Web.runtimeconfig.json" t="Include" />
+              <e p="Resume.Builder.Web.Views.dll" t="Include" />
+              <e p="Resume.Builder.Web.Views.pdb" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="ClientApp" t="Include">
+          <e p="App.css" t="Include" />
+          <e p="App.test.tsx" t="Include" />
+          <e p="App.tsx" t="Include" />
+          <e p="index.css" t="Include" />
+          <e p="index.tsx" t="Include" />
+          <e p="logo.svg" t="Include" />
+          <e p="react-app-env.d.ts" t="Include" />
+          <e p="serviceWorker.ts" t="Include" />
+        </e>
         <e p="Controllers" t="Include">
           <e p="HomeController.cs" t="Include" />
         </e>
@@ -31,6 +68,7 @@
         <e p="Docker" t="Include">
           <e p="docker-compose.yaml" t="Include" />
           <e p="Docker.projitems" t="Include" />
+          <e p="Docker.shproj" t="Include" />
           <e p="scripts" t="Include">
             <e p="schema.sql" t="Include" />
           </e>
@@ -41,9 +79,56 @@
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp2.2" t="Include">
+              <e p="Razor" t="Include">
+                <e p="Areas" t="Include">
+                  <e p="Identity" t="Include">
+                    <e p="Pages" t="Include">
+                      <e p="_ViewStart.g.cshtml.cs" t="Include" />
+                    </e>
+                  </e>
+                </e>
+                <e p="Views" t="Include">
+                  <e p="_ViewImports.g.cshtml.cs" t="Include" />
+                  <e p="_ViewStart.g.cshtml.cs" t="Include" />
+                  <e p="Home" t="Include">
+                    <e p="Index.g.cshtml.cs" t="Include" />
+                    <e p="Privacy.g.cshtml.cs" t="Include" />
+                  </e>
+                  <e p="Shared" t="Include">
+                    <e p="_CookieConsentPartial.g.cshtml.cs" t="Include" />
+                    <e p="_Layout.g.cshtml.cs" t="Include" />
+                    <e p="_LoginPartial.g.cshtml.cs" t="Include" />
+                    <e p="_ValidationScriptsPartial.g.cshtml.cs" t="Include" />
+                    <e p="Error.g.cshtml.cs" t="Include" />
+                  </e>
+                </e>
+              </e>
               <e p="Resume.Builder.Web.AssemblyInfo.cs" t="Include" />
+              <e p="Resume.Builder.Web.AssemblyInfoInputs.cache" t="Include" />
+              <e p="Resume.Builder.Web.assets.cache" t="Include" />
+              <e p="Resume.Builder.Web.csproj.CopyComplete" t="Include" />
+              <e p="Resume.Builder.Web.csproj.CoreCompileInputs.cache" t="Include" />
+              <e p="Resume.Builder.Web.csproj.FileListAbsolute.txt" t="Include" />
+              <e p="Resume.Builder.Web.csprojAssemblyReference.cache" t="Include" />
+              <e p="Resume.Builder.Web.dll" t="Include" />
+              <e p="Resume.Builder.Web.pdb" t="Include" />
+              <e p="Resume.Builder.Web.RazorAssemblyInfo.cache" t="Include" />
+              <e p="Resume.Builder.Web.RazorAssemblyInfo.cs" t="Include" />
+              <e p="Resume.Builder.Web.RazorCoreGenerate.cache" t="Include" />
+              <e p="Resume.Builder.Web.RazorTargetAssemblyInfo.cache" t="Include" />
+              <e p="Resume.Builder.Web.RazorTargetAssemblyInfo.cs" t="Include" />
+              <e p="Resume.Builder.Web.TagHelpers.input.cache" t="Include" />
+              <e p="Resume.Builder.Web.TagHelpers.output.cache" t="Include" />
+              <e p="Resume.Builder.Web.Views.dll" t="Include" />
+              <e p="Resume.Builder.Web.Views.pdb" t="Include" />
             </e>
           </e>
+          <e p="project.assets.json" t="Include" />
+          <e p="project.packagespec.json" t="Include" />
+          <e p="Resume.Builder.Web.csproj.nuget.cache" t="Include" />
+          <e p="Resume.Builder.Web.csproj.nuget.dgspec.json" t="Include" />
+          <e p="Resume.Builder.Web.csproj.nuget.g.props" t="Include" />
+          <e p="Resume.Builder.Web.csproj.nuget.g.targets" t="Include" />
         </e>
         <e p="package.json" t="Include" />
         <e p="Program.cs" t="Include" />

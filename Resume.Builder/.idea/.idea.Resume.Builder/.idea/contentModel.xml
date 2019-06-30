@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\AgodaGit\Resume.Builder\Resume.Builder" t="IncludeFlat">
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Resume.Builder.sln" t="IncludeFlat" />
+      <e p="Resume.Builder.Web" t="IncludeRecursive">
+        <e p=".gitignore" t="Include" />
+        <e p="app.config" t="Include" />
+        <e p="appsettings.Development.json" t="Include" />
+        <e p="appsettings.json" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="ClientApp" t="Include">
+          <e p=".gitignore" t="Include" />
+          <e p="node_modules\ajv" t="IncludeRecursive" />
+          <e p="node_modules\babel-eslint" t="IncludeRecursive" />
+          <e p="node_modules\bootstrap" t="IncludeRecursive" />
+          <e p="node_modules\cross-env" t="IncludeRecursive" />
+          <e p="node_modules\eslint" t="IncludeRecursive" />
+          <e p="node_modules\eslint-config-react-app" t="IncludeRecursive" />
+          <e p="node_modules\eslint-plugin-flowtype" t="IncludeRecursive" />
+          <e p="node_modules\eslint-plugin-import" t="IncludeRecursive" />
+          <e p="node_modules\eslint-plugin-jsx-a11y" t="IncludeRecursive" />
+          <e p="node_modules\eslint-plugin-react" t="IncludeRecursive" />
+          <e p="node_modules\jquery" t="IncludeRecursive" />
+          <e p="node_modules\react" t="IncludeRecursive" />
+          <e p="node_modules\react-dom" t="IncludeRecursive" />
+          <e p="node_modules\react-router-bootstrap" t="IncludeRecursive" />
+          <e p="node_modules\react-router-dom" t="IncludeRecursive" />
+          <e p="node_modules\react-scripts" t="IncludeRecursive" />
+          <e p="node_modules\reactstrap" t="IncludeRecursive" />
+          <e p="node_modules\rimraf" t="IncludeRecursive" />
+          <e p="package-lock.json" t="Include" />
+          <e p="package.json" t="Include" />
+          <e p="public" t="Include">
+            <e p="favicon.ico" t="Include" />
+            <e p="index.html" t="Include" />
+            <e p="manifest.json" t="Include" />
+          </e>
+          <e p="README.md" t="Include" />
+          <e p="scss" t="Include">
+            <e p="custom.scss" t="Include" />
+          </e>
+          <e p="src" t="Include">
+            <e p="App.js" t="Include" />
+            <e p="App.test.js" t="Include" />
+            <e p="components" t="Include">
+              <e p="Counter.js" t="Include" />
+              <e p="FetchData.js" t="Include" />
+              <e p="Home.js" t="Include" />
+              <e p="Layout.js" t="Include" />
+              <e p="NavMenu.css" t="Include" />
+              <e p="NavMenu.js" t="Include" />
+            </e>
+            <e p="index.js" t="Include" />
+            <e p="registerServiceWorker.js" t="Include" />
+          </e>
+        </e>
+        <e p="Controllers" t="Include">
+          <e p="SampleDataController.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp2.2" t="Include">
+              <e p="Resume.Builder.Web.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Pages" t="Include">
+          <e p="_ViewImports.cshtml" t="Include" />
+          <e p="Error.cshtml" t="Include" />
+          <e p="Error.cshtml.cs" t="Include" />
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="launchSettings.json" t="Include" />
+        </e>
+        <e p="Resume.Builder.Web.csproj" t="IncludeRecursive" />
+        <e p="Startup.cs" t="Include" />
+      </e>
+    </e>
+    <e p="C:\Users\yshaikh\.Rider2019.1\config\scratches" t="IncludeRecursive" />
+    <e p="C:\Users\yshaikh\.Rider2019.1\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\yshaikh\.Rider2019.1\system\resharper-host\local\Transient\ReSharperHost\v191\SolutionCaches\_Resume.Builder.-2053813985.00" t="ExcludeRecursive" />
+  </component>
+</project>
