@@ -7,3 +7,5 @@ client/node_modules/*
 server/obj/*
 server/bin/*
 server/.idea/*
+client/.idea*
+server/.vs/*

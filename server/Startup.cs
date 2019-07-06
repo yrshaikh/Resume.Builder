@@ -10,7 +10,9 @@ using AutoMapper;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.OpenApi.Models;
+using WebApi.Entities;
 
 namespace WebApi
 {
@@ -27,7 +29,16 @@ namespace WebApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddCors();
-            services.AddDbContext<DataContext>(x => x.UseInMemoryDatabase("TestDb"));
+
+            var mySqlConnectionString = Configuration.GetConnectionString("DefaultConnection");
+            
+            services.AddDbContext<ApplicationDbContext>(options =>
+                options.UseMySql(mySqlConnectionString));
+
+            services.AddIdentity<ApplicationUser, IdentityRole>()
+                .AddEntityFrameworkStores<ApplicationDbContext>()
+                .AddDefaultTokenProviders();
+            
             services.AddMvc();
             
             // Register the Swagger generator, defining 1 or more Swagger documents

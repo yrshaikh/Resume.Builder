@@ -6,108 +6,14 @@
     <PackageReference Include="AutoMapper" Version="6.0.2" />
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="2.0.1" />
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.2.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="2.2.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.2.4" />
+    <PackageReference Include="Microsoft.Extensions.Identity.Stores" Version="2.2.0" />
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="2.2.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="5.0.0-rc2" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="..\client\package-lock.json">
-      <Link>client\package-lock.json</Link>
-    </Content>
-    <Content Include="..\client\package.json">
-      <Link>client\package.json</Link>
-    </Content>
-    <Content Include="..\client\src\App\App.jsx">
-      <Link>client\src\App\App.jsx</Link>
-    </Content>
-    <Content Include="..\client\src\App\index.js">
-      <Link>client\src\App\index.js</Link>
-    </Content>
-    <Content Include="..\client\src\HomePage\HomePage.jsx">
-      <Link>client\src\HomePage\HomePage.jsx</Link>
-    </Content>
-    <Content Include="..\client\src\HomePage\index.js">
-      <Link>client\src\HomePage\index.js</Link>
-    </Content>
-    <Content Include="..\client\src\index.html">
-      <Link>client\src\index.html</Link>
-    </Content>
-    <Content Include="..\client\src\index.jsx">
-      <Link>client\src\index.jsx</Link>
-    </Content>
-    <Content Include="..\client\src\LoginPage\index.js">
-      <Link>client\src\LoginPage\index.js</Link>
-    </Content>
-    <Content Include="..\client\src\LoginPage\LoginPage.jsx">
-      <Link>client\src\LoginPage\LoginPage.jsx</Link>
-    </Content>
-    <Content Include="..\client\src\RegisterPage\index.js">
-      <Link>client\src\RegisterPage\index.js</Link>
-    </Content>
-    <Content Include="..\client\src\RegisterPage\RegisterPage.jsx">
-      <Link>client\src\RegisterPage\RegisterPage.jsx</Link>
-    </Content>
-    <Content Include="..\client\src\_actions\alert.actions.js">
-      <Link>client\src\_actions\alert.actions.js</Link>
-    </Content>
-    <Content Include="..\client\src\_actions\index.js">
-      <Link>client\src\_actions\index.js</Link>
-    </Content>
-    <Content Include="..\client\src\_actions\user.actions.js">
-      <Link>client\src\_actions\user.actions.js</Link>
-    </Content>
-    <Content Include="..\client\src\_components\index.js">
-      <Link>client\src\_components\index.js</Link>
-    </Content>
-    <Content Include="..\client\src\_components\PrivateRoute.jsx">
-      <Link>client\src\_components\PrivateRoute.jsx</Link>
-    </Content>
-    <Content Include="..\client\src\_constants\alert.constants.js">
-      <Link>client\src\_constants\alert.constants.js</Link>
-    </Content>
-    <Content Include="..\client\src\_constants\index.js">
-      <Link>client\src\_constants\index.js</Link>
-    </Content>
-    <Content Include="..\client\src\_constants\user.constants.js">
-      <Link>client\src\_constants\user.constants.js</Link>
-    </Content>
-    <Content Include="..\client\src\_helpers\auth-header.js">
-      <Link>client\src\_helpers\auth-header.js</Link>
-    </Content>
-    <Content Include="..\client\src\_helpers\config.js">
-      <Link>client\src\_helpers\config.js</Link>
-    </Content>
-    <Content Include="..\client\src\_helpers\history.js">
-      <Link>client\src\_helpers\history.js</Link>
-    </Content>
-    <Content Include="..\client\src\_helpers\index.js">
-      <Link>client\src\_helpers\index.js</Link>
-    </Content>
-    <Content Include="..\client\src\_helpers\store.js">
-      <Link>client\src\_helpers\store.js</Link>
-    </Content>
-    <Content Include="..\client\src\_reducers\alert.reducer.js">
-      <Link>client\src\_reducers\alert.reducer.js</Link>
-    </Content>
-    <Content Include="..\client\src\_reducers\authentication.reducer.js">
-      <Link>client\src\_reducers\authentication.reducer.js</Link>
-    </Content>
-    <Content Include="..\client\src\_reducers\index.js">
-      <Link>client\src\_reducers\index.js</Link>
-    </Content>
-    <Content Include="..\client\src\_reducers\registration.reducer.js">
-      <Link>client\src\_reducers\registration.reducer.js</Link>
-    </Content>
-    <Content Include="..\client\src\_reducers\users.reducer.js">
-      <Link>client\src\_reducers\users.reducer.js</Link>
-    </Content>
-    <Content Include="..\client\src\_services\index.js">
-      <Link>client\src\_services\index.js</Link>
-    </Content>
-    <Content Include="..\client\src\_services\user.service.js">
-      <Link>client\src\_services\user.service.js</Link>
-    </Content>
-    <Content Include="..\client\webpack.config.js">
-      <Link>client\webpack.config.js</Link>
-    </Content>
     <Content Include="..\README.md">
       <Link>README.md</Link>
     </Content>
