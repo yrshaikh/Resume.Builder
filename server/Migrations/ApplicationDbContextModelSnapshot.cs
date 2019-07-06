@@ -174,6 +174,18 @@ namespace WebApi.Migrations
                     b.ToTable("AspNetUsers");
                 });
 
+            modelBuilder.Entity("WebApi.Entities.EfTest", b =>
+                {
+                    b.Property<int>("EfTestId")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<DateTime>("StartDate");
+
+                    b.HasKey("EfTestId");
+
+                    b.ToTable("EfTests");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole")
