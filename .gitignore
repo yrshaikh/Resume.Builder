@@ -9,3 +9,6 @@ server/bin/*
 server/.idea/*
 client/.idea*
 server/.vs/*
+client.obsolete/.idea/*
+client.obsolete/node_modules/*
+resumebuilder.client/.idea/*

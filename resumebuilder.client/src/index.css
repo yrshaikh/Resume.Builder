@@ -24,7 +24,7 @@ body {
   font-family: 'Circular-Pro-Book',
   Arial,
   Helvetica,
-  sans-serif;
+  sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
