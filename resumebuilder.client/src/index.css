@@ -1,0 +1,35 @@
+@font-face {
+  font-family: "Circular-Pro-Book";
+  src: url("./fonts/lineto-circular-pro-book.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Circular-Pro-Bold";
+  src: url("./fonts/lineto-circular-pro-bold.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Circular-Pro-Medium";
+  src: url("./fonts/lineto-circular-pro-medium.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  font-family: 'Circular-Pro-Book',
+  Arial,
+  Helvetica,
+  sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

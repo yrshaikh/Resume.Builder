@@ -1,3 +1,28 @@
+@font-face {
+    font-family: 'FiraSans';
+    src: local('FiraSans'), url(../fonts/lineto-circular-pro-book.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: "Circular-Pro-Book";
+    src: url("../fonts/lineto-circular-pro-book.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Circular-Pro-Bold";
+    src: url("../fonts/lineto-circular-pro-bold.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Circular-Pro-Medium";
+    src: url("../fonts/lineto-circular-pro-medium.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
 .App {
     margin-top: 25px;
+    font-family: 'FiraSans', 'Circular-Pro-Book','Circular-Pro-Bold','Circular-Pro-Medium','Lato', sans-serif;
 }
