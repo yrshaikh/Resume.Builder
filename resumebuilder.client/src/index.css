@@ -1,11 +1,10 @@
 body {
-  margin: 0;
-  font-family: 'Roboto', Arial, Helvetica, sans-serif !important;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    margin: 0;
+    font-family: 'Rubik', 'Roboto', Arial, Helvetica, sans-serif !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 14px;
+    font-weight: 500;
+    color:#000;
+    background: #fff;
 }
