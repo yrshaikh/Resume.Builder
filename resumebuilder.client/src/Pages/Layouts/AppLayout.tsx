@@ -1,5 +1,4 @@
 import React from 'react';
-
 import './AppLayout.scss';
 import {Layout, Menu} from 'antd';
 
