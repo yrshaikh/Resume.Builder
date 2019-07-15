@@ -1,0 +1,15 @@
+@import './../../../Variables.scss';
+.AppMenu {
+    line-height: 70px;
+    &__Item {
+        &--right {
+            float: right;
+        }
+        &--callToAction {
+            background: $button-color;
+            &:hover {
+                background: $button-color-onhover !important;
+            }
+        }
+    }
+}
