@@ -1,0 +1,14 @@
+.AppMenu {
+    line-height: 70px;
+    &__Item {
+        &--right {
+            float: right;
+        }
+        &--callToAction {
+            background: #c142a0;
+            &:hover {
+                background: #ac388e;
+            }
+        }
+    }
+}
