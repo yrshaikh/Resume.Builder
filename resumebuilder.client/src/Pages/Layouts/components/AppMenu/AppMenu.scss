@@ -1,3 +1,4 @@
+@import './../../../Variables.scss';
 .AppMenu {
     line-height: 70px;
     &__Item {
@@ -5,9 +6,9 @@
             float: right;
         }
         &--callToAction {
-            background: #c142a0;
+            background: $button-color;
             &:hover {
-                background: #ac388e !important;
+                background: $button-color-onhover !important;
             }
         }
     }
