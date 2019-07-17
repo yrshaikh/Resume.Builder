@@ -1,1 +1,10 @@
-@import '~antd/dist/antd.css';
+@import "~antd/dist/antd.css";
+
+.AppLayout {
+    background: #fff;
+    color: #000;
+
+    &__Content {
+        padding: 0 50px;
+    }
+}
