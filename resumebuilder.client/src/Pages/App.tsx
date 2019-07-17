@@ -1,12 +1,30 @@
-import React from 'react';
-import './App.scss';
+import React from "react";
+import "./App.scss";
 import "./AntOverrides.scss";
+import { Route, Link, BrowserRouter as Router } from "react-router-dom";
+import { Layout } from "antd";
+import AppMenu from "./AppMenu/AppMenu";
+import Home from "./Home/Home";
+import Features from "./Features/Features";
 
-import AppLayout from './Layouts/AppLayout';
+const { Header, Content } = Layout;
 
 const App: React.FC = () => {
     return (
-        <AppLayout />
+        <Layout className="AppLayout">
+            <Header>
+                <div className="AppLayout__Logo" />
+                <AppMenu />
+            </Header>
+            <Content className="AppLayout__Content">
+                <Router>
+                    <div>
+                        <Route exact path="/" component={Home} />
+                        <Route exact path="/features" component={Features} />
+                    </div>
+                </Router>
+            </Content>
+        </Layout>
     );
 };
 
