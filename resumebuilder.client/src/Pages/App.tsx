@@ -11,29 +11,29 @@ import Features from "./Features/Features";
 
 const { Header, Content } = Layout;
 
-interface IProps {
+interface IAppProps {
 };
 
-interface IState {
-    DisplayMenu: Boolean
+interface IAppState {
+    enableHeader: boolean
 };
 
-class App extends React.Component<IProps, IState> {
-    state: IState;
+class App extends React.Component<IAppProps, IAppState> {
+    state: IAppState;
 
-    constructor(props: IProps) {
+    constructor(props: IAppProps) {
         super(props);
 
         this.state = {
-            DisplayMenu: true
+            enableHeader: true
         };
 
-        this.handleDisplayMenu = this.handleDisplayMenu.bind(this);
+        this.hideHeader = this.hideHeader.bind(this);
     }
 
-    private handleDisplayMenu(value: boolean) {
+    private hideHeader(value: boolean) {
         this.setState({
-            DisplayMenu: value
+            enableHeader: value
         });
     }
 
@@ -48,21 +48,21 @@ class App extends React.Component<IProps, IState> {
 
         return (
             <Layout className="AppLayout">
-                {(this.state.DisplayMenu) ? HeaderLayout : null}
+                {(this.state.enableHeader) ? HeaderLayout : null}
                 <Content className="AppLayout__Content">
                     <Switch>
                         <Route
                             exact
                             path="/"
-                            render={(props: IProps) => <Home {...props} handleDisplayMenu={this.handleDisplayMenu} />}
+                            render={(props: IAppProps) => <Home {...props} hideHeader={this.hideHeader} />}
                         />
                         <Route
                             path="/entry"
-                            render={(props: IProps) => <Entry {...props} handleDisplayMenu={this.handleDisplayMenu} />}
+                            render={(props: IAppProps) => <Entry {...props} hideHeader={this.hideHeader} />}
                         />
                         <Route
                             path="/features"
-                            render={(props: IProps) => <Features {...props} handleDisplayMenu={this.handleDisplayMenu} />}
+                            render={(props: IAppProps) => <Features {...props} hideHeader={this.hideHeader} />}
                         />
                         <Redirect
                             from="/**"

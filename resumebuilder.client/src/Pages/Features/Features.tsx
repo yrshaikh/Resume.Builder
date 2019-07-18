@@ -1,12 +1,12 @@
 import React from "react";
 
 interface IFeaturesProps {
-    handleDisplayMenu: Function
+    hideHeader: Function
 };
 
 class Features extends React.Component<IFeaturesProps> {
     componentDidMount() {
-        this.props.handleDisplayMenu(true);
+        this.props.hideHeader(true);
     }
     
     render() {

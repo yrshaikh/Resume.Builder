@@ -2,12 +2,12 @@ import React from "react";
 import "./Home.scss";
 
 interface IHomeProps {
-  handleDisplayMenu: Function
+  hideHeader: Function
 }
 
 class Home extends React.Component<IHomeProps> {
   componentDidMount() {
-    this.props.handleDisplayMenu(true);
+    this.props.hideHeader(true);
   }
 
   render() {
