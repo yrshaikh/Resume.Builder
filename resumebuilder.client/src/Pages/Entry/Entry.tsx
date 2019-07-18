@@ -1,8 +1,17 @@
 import * as React from 'react';
 import './Entry.scss';
 
-class Entry extends React.Component {
+interface IEntryProps {
+    handleDisplayMenu: Function
+}
+
+class Entry extends React.Component<IEntryProps, any> {
+    componentDidMount() {
+        this.props.handleDisplayMenu(false);
+    }
+
     render() {
+        console.log(this.props);
         return (
             <div>
                 Entry Page

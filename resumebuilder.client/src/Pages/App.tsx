@@ -1,27 +1,78 @@
 import React from "react";
 import "./App.scss";
 import "./AntOverrides.scss";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { Switch, Route, Redirect } from "react-router-dom";
 import { Layout } from "antd";
 import AppMenu from "./AppMenu/AppMenu";
-import Routes from "../routes.config";
+// components to be routed
+import Home from "./Home/Home";
+import Entry from "./Entry/Entry";
+import Features from "./Features/Features";
 
 const { Header, Content } = Layout;
 
-const App: React.FC = () => {
-    return (
-        <Layout className="AppLayout">
+interface IProps {
+};
+
+interface IState {
+    DisplayMenu: Boolean
+};
+
+class App extends React.Component<IProps, IState> {
+    state: IState;
+
+    constructor(props: IProps) {
+        super(props);
+
+        this.state = {
+            DisplayMenu: true
+        };
+
+        this.handleDisplayMenu = this.handleDisplayMenu.bind(this);
+    }
+
+    private handleDisplayMenu(value: boolean) {
+        this.setState({
+            DisplayMenu: value
+        });
+    }
+
+    render() {
+        console.log(this.state);
+        const HeaderLayout = (
             <Header>
                 <div className="AppLayout__Logo" />
                 <AppMenu />
             </Header>
-            <Content className="AppLayout__Content">
-                <Router> 
-                    {Routes.map(({path, component}) => <Route exact path={path} component={component}/>)}
-                </Router>
-            </Content>
-        </Layout>
-    );
+        );
+
+        return (
+            <Layout className="AppLayout">
+                {(this.state.DisplayMenu) ? HeaderLayout : null}
+                <Content className="AppLayout__Content">
+                    <Switch>
+                        <Route
+                            exact
+                            path="/"
+                            render={(props: IProps) => <Home {...props} handleDisplayMenu={this.handleDisplayMenu} />}
+                        />
+                        <Route
+                            path="/entry"
+                            render={(props: IProps) => <Entry {...props} handleDisplayMenu={this.handleDisplayMenu} />}
+                        />
+                        <Route
+                            path="/features"
+                            render={(props: IProps) => <Features {...props} handleDisplayMenu={this.handleDisplayMenu} />}
+                        />
+                        <Redirect
+                            from="/**"
+                            to="/"
+                        />
+                    </Switch>
+                </Content>
+            </Layout>
+        );
+    };
 };
 
 export default App;
