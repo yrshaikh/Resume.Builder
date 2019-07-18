@@ -1,0 +1,17 @@
+dist: trusty
+language: node_js
+
+node_js:
+- "12"
+
+before_install:
+  - npm install -g greenkeeper-lockfile@1
+
+before_script: greenkeeper-lockfile-update
+
+script:
+  - npm run build -s
+  - npm run lint -s
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
