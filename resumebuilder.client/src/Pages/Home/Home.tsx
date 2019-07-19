@@ -2,14 +2,9 @@ import React from "react";
 import "./Home.scss";
 
 interface IHomeProps {
-  hideHeader: Function
 }
 
 class Home extends React.Component<IHomeProps> {
-  componentDidMount() {
-    this.props.hideHeader(true);
-  }
-
   render() {
     return (
       <div className="Home">
