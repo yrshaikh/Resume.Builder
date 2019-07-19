@@ -1,7 +1,10 @@
 import * as React from 'react';
 import './Entry.scss';
 
-class Entry extends React.Component {
+interface IEntryProps {
+}
+
+class Entry extends React.Component<IEntryProps, any> {
     render() {
         return (
             <div>

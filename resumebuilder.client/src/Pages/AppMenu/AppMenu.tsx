@@ -2,8 +2,6 @@ import React from "react";
 import "./AppMenu.scss";
 import { Menu } from "antd";
 
-import { Route, Link, BrowserRouter as Router } from "react-router-dom";
-
 const AppMenu: React.FC = () => {
     const selectedMenu = ["1"];
     return (
