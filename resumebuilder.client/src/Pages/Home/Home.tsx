@@ -32,6 +32,6 @@ class Home extends React.Component<IHomeProps> {
       </div>
     );
   }
-};
+}
 
 export default Home;
