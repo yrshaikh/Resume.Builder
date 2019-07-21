@@ -1,7 +1,7 @@
 import React from "react";
 
 interface IFeaturesProps {
-};
+}
 
 class Features extends React.Component<IFeaturesProps> {
     render() {
@@ -11,6 +11,6 @@ class Features extends React.Component<IFeaturesProps> {
             </div>
         );
     }
-};
+}
 
 export default Features;

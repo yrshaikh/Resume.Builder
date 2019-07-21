@@ -1,34 +1,37 @@
 import React from "react";
 import "./App.scss";
 import "./AntOverrides.scss";
-import { Switch, Route, Redirect } from "react-router-dom";
-import { Layout } from "antd";
+import {Switch, Route, Redirect} from "react-router-dom";
+import {Layout} from "antd";
 import AppMenu from "./AppMenu/AppMenu";
 // components to be routed
 import Home from "./Home/Home";
-import Entry from "./Entry/Entry";
+import Authentication from "./Authentication/Authentication";
 import Features from "./Features/Features";
+import PageNotFound from "./Common/PageNotFound/PageNotFound"
 
-const { Header, Content } = Layout;
+const {Header, Content} = Layout;
 
 interface IAppProps {
-    location: {
+    location?: {
         pathname: string
     }
-};
+}
 
 class App extends React.Component<IAppProps, any> {
     render() {
         const HeaderLayout = (
             <Header>
-                <div className="AppLayout__Logo" />
-                <AppMenu />
+                <div className="AppLayout__Logo"/>
+                <AppMenu/>
             </Header>
         );
 
+        const path = this.props.location != null ? this.props.location.pathname : '';
+
         return (
             <Layout className="AppLayout">
-                {(this.props.location.pathname !== "/entry") ? HeaderLayout : null}
+                {(path !== "/entry") ? HeaderLayout : null}
                 <Content className="AppLayout__Content">
                     <Switch>
                         <Route
@@ -37,22 +40,26 @@ class App extends React.Component<IAppProps, any> {
                             render={(props: IAppProps) => <Home {...props} />}
                         />
                         <Route
-                            path="/entry"
-                            render={(props: IAppProps) => <Entry {...props} />}
+                            path="/authentication"
+                            render={(props: IAppProps) => <Authentication {...props} />}
                         />
                         <Route
                             path="/features"
                             render={(props: IAppProps) => <Features {...props} />}
                         />
+                        <Route
+                            path="/pagenotfound"
+                            render={(props: IAppProps) => <PageNotFound {...props} />}
+                        />
                         <Redirect
                             from="/**"
-                            to="/"
+                            to="/pagenotfound"
                         />
                     </Switch>
                 </Content>
             </Layout>
         );
     };
-};
+}
 
 export default App;
