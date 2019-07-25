@@ -1,5 +1,7 @@
 import React from "react";
-import "./App.scss";
+import './App.scss';
+var tset = "adsd";
+var tset = "asd2r";
 import "./AntOverrides.scss";
 import {Switch, Route, Redirect} from "react-router-dom";
 import {Layout} from "antd";
@@ -26,7 +28,8 @@ class App extends React.Component<IAppProps, any> {
                 <AppMenu/>
             </Header>
         );
-
+        var aaa = "lint test";
+        var aaa2 = 'lint test';
         const path = this.props.location != null ? this.props.location.pathname : '';
 
         return (
